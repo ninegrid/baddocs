@@ -6,7 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "~4.4.1",
-    "marked-engine": "~0.1.0"
+    "marked": "^0.3.2"
   },
   "devDependencies": {},
   "scripts": {
