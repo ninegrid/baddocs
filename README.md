@@ -2,14 +2,14 @@ baddocs
 =======
 
 The worst, most feature-less most horrible documentation system ever, except
-it's not.  Write your docs in multiple mardown files `*.mdpp`.  Weave them all
-into a single `*.md` by making use of !INCLUDE preprocessor directives.
+that it's not.  Write your docs in multiple markdown files `*.mdpp`.  Weave 
+them all into a single `*.md` by making use of !INCLUDE preprocessor directives.
 Supports synthetically embedding youtube videos, `LaTeX`, interactive process 
 diagramming with `joint.js`... github flavored markdown, and a bunch of other
 stuff.
 
-Includes are evaluated recursively and rendered in place.  Depends on
-`Markdown-PP`.
+Includes are *evaluated recursively* and *rendered in place*.  Awesome. Only one
+external dependency: [Markdown-PP](http://github.com/jreese/markdown-pp).
 
 ```shell
 npm install --save baddocs
@@ -26,14 +26,12 @@ var config = {
 baddocs(config);
 ```
 
-Setup a `header.html` and a `footer.html`.  And author your *.mdpp.
+Setup a `header.html` and a `footer.html`.  And author your *.mdpp.  Here's what
+you can do:
 
-```md
+```Markdown
 Feature Tests
 -------
-
-This shim supports the following features, remove this section entirely from
-your fork.
 
 ##### INCLUDE
 
@@ -46,25 +44,45 @@ your fork.
 
 ##### Code
 
-```python
-# Multi-armed Bandit Algorithm
-def choose():
-    if math.random() < 0.1:
-        # exploration!
-        # choose a random lever 10% of the time.
-    else:
-        # exploitation!
-        # for each lever, 
-            # calculate the expectation of reward. 
-            # This is the number of trials of the lever divided by the total reward 
-            # given by that lever.
-        # choose the lever with the greatest expectation of reward.
-    # increment the number of times the chosen lever has been played.
-    # store test data in redis, choice in session key, etc..
+\`\`\`F#
+(*
+  <LionMadeOfLions> scientists are baffled, though, it will be decades before we
+                    begin to understand the lion made of lions
 
-def reward(choice, amount):
-    # add the reward to the total for the given lever.
-```
+  <ninegrid> challenge accepted
+*)
+
+type LionMadeOfLions = Lions | Lion of LionMadeOfLions * LionMadeOfLions
+let lionMadeOfLions = Lion(Lion(Lion(Lions,Lions),Lions),Lions)
+
+(*
+           Lion
+          /    \
+         Lion  Lions
+        /    \
+      Lion  Lions
+      /   \
+    Lions Lions
+*)
+
+let rec y f x = f (y f) x
+let understand x = printfn "%A" x
+
+let lions (lions : LionMadeOfLions -> LionMadeOfLions) = function
+  | Lion (x,y) -> lions x
+  | Lions      -> Lions
+
+y (lions >> fun f lion -> understand lion; f lion) lionMadeOfLions
+
+(* output:
+  Lion (Lion (Lion (Lions,Lions),Lions),Lions)
+  Lion (Lion (Lions,Lions),Lions)
+  Lion (Lions,Lions)
+  Lions
+
+  val it : LionMadeOfLions = Lions
+*)
+\`\`\`
 
 ##### Joint
 
@@ -92,11 +110,12 @@ Content Cell  | Content Cell
 
 ##### Images
 
-![Promitheia Technologies, LLC](images/pti.png) "Promitheia Technologies"
+![Awesome Logo, LLC](images/pti.png) "Awesome Company"
 
 ##### Video
 
 !VIDEO "http://www.youtube.com/embed/lQAV3bPOYHo"
 ```
 
-
+Now you can make markdown documents from lots of little markdown documents.
+This is good for authoring stuff like Operations Manuals for startups.
