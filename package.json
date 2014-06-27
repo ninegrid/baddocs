@@ -20,7 +20,7 @@
     "markdown-pp",
     "preprocessor",
     "docs",
-    "documentation",
+    "documentation"
   ],
   "bugs": {
     "url": "https://github.com/ninegrid/is-genfn/issues"
