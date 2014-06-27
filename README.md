@@ -68,7 +68,8 @@ Table of Contents
 You need docs fast. Should be like [github] flavored markdown, but more files.
 You'll need images, video, any javascript you haven't thought of yet, 
 interactive diagrams, links with a reference section for citations, and tables
-and lists.  Uh... automatic table of contents and recursively 
+and lists.  Uh... automatic table of contents thats recursively generated across
+included files...
 
 So you head off in that exact order and what do you get?:
 :
@@ -184,7 +185,8 @@ boxes around if want.  Try and put them back again exactly right if you're OCD.
 <div id="basic-joint">
 </div>
 
-<script src="/joints/basic.js">
+
+<script src="https://raw.githubusercontent.com/ninegrid/baddocs/master/example/joints/basic.js">
 </script>
 
 <a name="tables"></a>
@@ -211,9 +213,6 @@ Content Cell  | Content Cell
 <a name="recursiveinplacemarkdownincludes"></a>
 
 ## 1.8\. Recursive in place markdown includes
-
-
-
 
 - - - -
 
