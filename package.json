@@ -1,6 +1,6 @@
 {
   "name": "baddocs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple preprocessed markdown docs",
   "main": "index.js",
   "dependencies": {
