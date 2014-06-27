@@ -1,4 +1,34 @@
-# Our story unfolds
+baddocs example
+=============
+
+_Proudly, the worlds worst document engine. Ever._
+
+Table of Contents
+-----------------
+- - - -
+
+1\.  [Our story unfolds](#ourstoryunfolds)  
+1.1\.  [Links with references](#linkswithreferences)  
+1.2\.  [Math](#math)  
+1.3\.  [Code](#code)  
+1.3.1\.  [baddocs/index.js](#baddocs/index.js)  
+1.4\.  [Joint](#joint)  
+1.5\.  [Tables](#tables)  
+1.6\.  [Images](#images)  
+1.7\.  [Video](#video)  
+1.8\.  [Recursive in place markdown includes](#recursiveinplacemarkdownincludes)  
+1.9\.  [Stuff in between](#stuffinbetween)  
+1.9.1\.  [Epic unordered list of ordered numbers](#epicunorderedlistoforderednumbers)  
+2\.  [The End](#theend)  
+2.1\.  [Twist](#twist)  
+2.2\.  [The Real End](#therealend)  
+3\.  [References](#references)  
+
+- - - -
+
+<a name="ourstoryunfolds"></a>
+
+# 1\. Our story unfolds
 
 You need docs fast. Should be like [github] flavored markdown, but more files.
 You'll need images, video, any javascript you haven't thought of yet, 
@@ -7,18 +37,27 @@ and lists.  Uh... automatic table of contents and recursively
 
 So you head off in that exact order and what do you get?:
 :
-## Links with references
+<a name="linkswithreferences"></a>
+
+## 1.1\. Links with references
 
 [github]: http://www.github.com/ninegrid/baddocs "baddocs homepage at Github"
 
 
-## Math
+<a name="math"></a>
 
-> $r_{xy} = {n \sum_i x_i y_i - \sum_i x_i \sum_i y_i \over \sqrt{n \sum_i x_i^2 - (\sum x_i)^2} \sqrt{n \sum_i y_i^2 - (\sum_i y_i)^2}}.$
+## 1.2\. Math
 
-## Code
+> ![r_{xy} = {n \sum_i x_i y_i - \sum_i x_i \sum_i y_i \over \sqrt{n \sum_i x_i^2 - (\sum x_i)^2} \sqrt{n \sum_i y_i^2 - (\sum_i y_i)^2}}.](http://quicklatex.com/cache3/ql_615737858134b280b9a8b4c29553ad15_l3.png "r_{xy} = {n \sum_i x_i y_i - \sum_i x_i \sum_i y_i \over \sqrt{n \sum_i x_i^2 - (\sum x_i)^2} \sqrt{n \sum_i y_i^2 - (\sum_i y_i)^2}}.")
 
-### baddocs/index.js
+
+<a name="code"></a>
+
+## 1.3\. Code
+
+<a name="baddocs/index.js"></a>
+
+### 1.3.1\. baddocs/index.js
 ```javascript
 module.exports = function(config) {
   var express = require('express'),
@@ -93,7 +132,9 @@ module.exports = function(config) {
 };
 ```
 
-## Joint
+<a name="joint"></a>
+
+## 1.4\. Joint
 
 Interactive process charting (click a box to start the animation). Drag the
 boxes around if want.  Try and put them back again exactly right if you're OCD.
@@ -111,23 +152,76 @@ boxes around if want.  Try and put them back again exactly right if you're OCD.
 <script src="/joints/basic.js">
 </script>
 
-## Tables
+<a name="tables"></a>
+
+## 1.5\. Tables
 
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-## Images
+<a name="images"></a>
+
+## 1.6\. Images
 
 ![ninegrid](https://avatars.githubusercontent.com/u/512206?s=460) "ninegrid"
 
-## Video
+<a name="video"></a>
+
+## 1.7\. Video
 
 !VIDEO "http://www.youtube.com/watch?v=uk-CF7klLdA"
 
-## Recursive in place markdown includes
+<a name="recursiveinplacemarkdownincludes"></a>
 
-!INCLUDE "second.mdpp"
+## 1.8\. Recursive in place markdown includes
 
 
+
+
+- - - -
+
+<a name="stuffinbetween"></a>
+
+## 1.9\. Stuff in between
+
+Everything thats been included gets picked up by the TOC. [github].
+
+- - - -
+
+
+<a name="epicunorderedlistoforderednumbers"></a>
+
+### 1.9.1\. Epic unordered list of ordered numbers
+  * 1 (one)
+  * 2 (two)
+  * 3 (three)
+
+- - - -
+
+<a name="theend"></a>
+
+# 2\. The End
+
+The end.
+
+<a name="twist"></a>
+
+## 2.1\. Twist
+
+Fight the boss twice.
+
+<a name="therealend"></a>
+
+## 2.2\. The Real End
+
+The end.
+
+- - - -
+
+<a name="references"></a>
+
+# 3\. References
+
+*	[baddocs homepage at Github][github]
