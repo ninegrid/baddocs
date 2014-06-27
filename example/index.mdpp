@@ -1,0 +1,38 @@
+baddocs example
+=============
+
+_Proudly, the worlds worst document engine. Ever._
+
+Table of Contents
+-----------------
+- - - -
+
+!TOC
+
+- - - -
+
+!INCLUDE "includes/first.mdpp"
+
+- - - -
+
+## Stuff in between
+
+Everything thats been included gets picked up by the TOC. [github].
+
+- - - -
+
+
+### Epic unordered list of ordered numbers
+  * 1 (one)
+  * 2 (two)
+  * 3 (three)
+
+- - - -
+
+!INCLUDE "includes/third.mdpp"
+
+- - - -
+
+# References
+
+!REF

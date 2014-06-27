@@ -1,0 +1,5 @@
+Includes directives are given with `!INCLUDE "path/file.mdpp"` where the path
+to the mdpp file is relative to the path to the file in which this include is
+written.
+
+Includes evaluated recursively and rendered in-place in the final document.

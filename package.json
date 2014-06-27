@@ -1,7 +1,7 @@
 {
   "name": "baddocs",
   "version": "0.0.1",
-  "description": "simple markdown docs",
+  "description": "simple preprocessed markdown docs",
   "main": "index.js",
   "dependencies": {
     "express": "~4.4.1",
@@ -9,8 +9,23 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified! ANARCHY!\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ninegrid/baddocs.git"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-pp",
+    "preprocessor",
+    "docs",
+    "documentation",
+  ],
+  "bugs": {
+    "url": "https://github.com/ninegrid/is-genfn/issues"
+  },
+  "homepage": "https://github.com/ninegrid/is-genfn",
   "author": "Daniel Jackson <daniel@thinkhard.net>",
   "license": "MIT"
 }
