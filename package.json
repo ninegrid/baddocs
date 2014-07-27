@@ -1,6 +1,6 @@
 {
   "name": "baddocs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "simple preprocessed markdown docs",
   "main": "index.js",
   "dependencies": {
@@ -23,9 +23,9 @@
     "documentation"
   ],
   "bugs": {
-    "url": "https://github.com/ninegrid/is-genfn/issues"
+    "url": "https://github.com/ninegrid/baddocs/issues"
   },
-  "homepage": "https://github.com/ninegrid/is-genfn",
+  "homepage": "https://github.com/ninegrid/baddocs",
   "author": "Daniel Jackson <daniel@thinkhard.net>",
   "license": "MIT"
 }
